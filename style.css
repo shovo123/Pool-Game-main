@@ -1,0 +1,60 @@
+.frame{
+    display: flex;
+    justify-content: center;
+}
+.table{
+    height: 400px;
+    width: 900px;
+    border: 2px solid yellowgreen;
+}
+.stick{
+    transition: transform 0.5s;
+}
+.ball-1{
+    position: relative;
+    top: 15px;
+    transition: transform 1s 0.2s;
+}
+.ball-2{
+    position: relative;
+    left: 50px;
+    top: -20px;
+    transition: transform 0.5s 0.38s;
+}
+.ball-3{
+    position: relative;
+    left: 90px;
+    top: 10px;
+    transition: transform 0.4s 0.7s;
+}
+.ball-5{
+    position: relative;
+    left: 80px;
+    top: 60px;
+    transition: transform 0.7s 0.9s;
+}
+.ball-8{
+    position: relative;
+    top: 140px;
+    left: 30px;
+    transition: transform 0.5s 1.3s;
+}
+
+.table:hover .stick{
+    transform: translate(12px, 5px);
+}
+.table:hover .ball-1{
+    transform: translate(180px, -20px) rotate(-440deg);
+}
+.table:hover .ball-2{
+    transform: translate(10px, -50px) rotate(-75deg);
+}
+.table:hover .ball-3{
+    transform: translate(28px, 12px) rotate(90deg);
+}
+.table:hover .ball-5{
+    transform: translate(2px, 35px) rotate(-50deg);
+}
+.table:hover .ball-8{
+    transform: translate(0, 10px) rotate(25deg);
+}
